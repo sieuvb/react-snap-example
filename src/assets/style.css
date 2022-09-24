@@ -1,0 +1,128 @@
+/*
+ * You can define your custom CSS here.
+ */
+
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "SF Pro Rounded", "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "SF Pro Rounded", "Inter var", sans-serif;
+  }
+}
+body {
+  background-color: #ffecc7;
+  background-image: url("data:image/svg+xml,%3Csvg width='500' height='500' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23fbcf88' fill-opacity='0.44' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+.box {
+  padding: 1rem;
+  max-width: 32rem;
+  height: 528px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.img01 {
+  background-image: url("static/banana.png");
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 240px;
+  margin-bottom: 1rem;
+}
+.img02 {
+  background-image: url("static/landfill.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 180px;
+  margin-top: 1rem;
+}
+.btn01 {
+  display: inline-block;
+  background-color: #27ae60;
+  border-radius: 100px;
+  border: 1px #27ae60 solid;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 28px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.btn01 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.btn01 span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.btn01:hover span {
+  padding-right: 25px;
+}
+
+.btn01:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.mmenu {
+  background-color: #f2994a;
+  padding-top: 1rem;
+}
+.mmenu a {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 24px;
+}
+.mmenu a:hover {
+  background-color: #f6ab68;
+  border-radius: 0.5rem;
+}
+.asks {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  opacity: 0.75;
+  margin: 1rem auto;
+  padding: 2rem 1.5rem;
+}
+.asks p {
+  margin-top: 1.5rem;
+}
+.awss div {
+  padding: 0.5rem 1rem;
+}
+.awss a {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #27ae60;
+}
+.awss a:hover {
+  color: #f2994a;
+}
